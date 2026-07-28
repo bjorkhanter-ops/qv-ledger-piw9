@@ -1,0 +1,32 @@
+# 개인용 뉴스 판단 대시보드 — 공개 배포물이 아님.
+# GitHub Pages 무료 플랜이 공개 저장소만 지원해 공개 상태일 뿐이다.
+#
+# 검색엔진: 일반 크롤러의 접근은 막지 않는다. 페이지의 noindex 메타를
+# 읽어야 색인이 확실히 차단되기 때문이다 (접근 자체를 막으면 크롤러가
+# 태그를 보지 못해 외부 링크만으로 URL이 색인될 수 있다).
+#
+# AI 학습·수집 크롤러: noindex를 따르지 않으므로 여기서 차단한다.
+# 이 화면은 각 신문사 지면 제목과 발행사 요약 리드를 모아둔 것이라,
+# 우리가 수집 단계에서 각 매체의 robots.txt를 존중한 것과 같은 기준을
+# 우리 산출물에도 적용한다.
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+User-agent: Meta-ExternalAgent
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: Diffbot
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: *
+Allow: /
